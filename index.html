@@ -19,7 +19,27 @@
     <title>Colombbeans</title>
 </head>
 <body>
-    <header>Nav bars</header>
+    <header>
+        <!--Desktop navigation menu-->
+        <nav id="desktop-nav">
+            <div onclick="location.href='#home';" style="cursor: pointer;" class="desktop-nav-item hvr-float">
+                <a href="#home" class="home-marker active">Home</a>
+            </div>
+            <div onclick="location.href='#features';" style="cursor: pointer;" class="desktop-nav-item hvr-float">
+                <a href="#features" class="features-marker">The Coffee</a>
+            </div>
+            <div onclick="location.href='#process';" style="cursor: pointer;" class="desktop-nav-item hvr-float">
+                <a href="#process" class="process-marker">The Making</a>
+            </div>
+            <div onclick="location.href='#faq';" style="cursor: pointer;" class="desktop-nav-item hvr-float">
+                <a href="#faq" class="faq-marker">FAQ</a>
+            </div>
+            <div onclick="location.href='#contact';" style="cursor: pointer;" class="desktop-nav-item hvr-float">
+                <a href="#contact" class="contact-marker">Contact</a>
+            </div>
+        </nav>
+        <!--End of desktop navigation menu-->
+    </header>
     <section id="home" class="home">
         <div class="background-image"></div>
         <div class="overlay"></div>
@@ -37,8 +57,8 @@
                 <button>Let's do business!</button>
             </div>
             <div class="coordinates">
-                <p>6° 33' 30.708'' N<br>
-                75° 49' 39.4644'' W</p>
+                <span class="offset-1">6° 33' 30.708'' N<br>
+                75° 49' 39.4644'' W</span>
             </div>
         </div>
     </section>
