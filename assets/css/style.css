@@ -18,6 +18,11 @@ section {
     min-height: 100vh;
     width: 100vw;
 }
+
+.section-title {
+    margin-left: 3rem;
+}
+
 /* End of global styles */
 
 /* On scroll animation classes */
@@ -223,10 +228,6 @@ img#logo {
     padding-top: 35px;
 }
 
-#section-title {
-    padding: 40px 40px;
-}
-
 .features-container {
     margin-inline: auto;
     width: min(90%, 70.5rem);
@@ -251,6 +252,53 @@ img#logo {
     margin-left: 2em;
 }
 /* End of features section */
+
+/* Process section */
+.process {
+    padding-top: 80px;
+}
+
+.process-content {
+    display: flex;
+    padding-top: 35px;
+}
+
+.process-container {
+    margin-inline: auto;
+    width: 100%;
+}
+
+.process-media {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.process-content > * {
+    flex-basis: 100%;
+}
+
+.process-content > *  {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.process-content div p {
+    text-align: justify;
+}
+
+#process > div > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#process > div > div > div:nth-child(2) iframe {
+    width: 100%;
+    height: 300px;
+
+}
+/* End of process section */
 
 /* Media queries for smaller and medium devices */
 @media screen and (max-width: 1024px) {
@@ -363,6 +411,15 @@ img#logo {
 
     .features-content > * + * {
         margin-left: 0;
+        padding-top: 35px;
+    }
+
+    /* Process section */
+    .process-content{
+        flex-direction: column;
+    }
+
+    .process-content > * + * {
         padding-top: 35px;
     }
 }
