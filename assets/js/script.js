@@ -59,3 +59,9 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 });
+
+// Script to enable pseudoelements to work with Fontawesome
+// Credit for solution https://stackoverflow.com/questions/47712987/font-awesome-5-on-pseudo-elements
+window.FontAwesomeConfig = {
+    searchPseudoElements: true
+}
