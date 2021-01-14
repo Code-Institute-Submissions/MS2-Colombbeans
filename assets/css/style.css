@@ -370,6 +370,7 @@ h4::after {
     position: relative;
     display: block;
     padding-right: 20px;
+    text-align: justify;
 }
 /* End of FAQ section */
 
