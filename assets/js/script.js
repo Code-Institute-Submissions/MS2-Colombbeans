@@ -65,3 +65,16 @@ sliders.forEach(slider => {
 window.FontAwesomeConfig = {
     searchPseudoElements: true
 }
+
+//Function to make the accordion containers open and close onclick
+$('.accordion-container > li > .faq-answer').hide();
+$('.accordion-container > li').click(function() {
+        if ($(this).hasClass("active")) {
+        $(this).removeClass("active").find(".faq-answer").slideUp();
+        } else {
+        $(".accordion-container > li.active .faq-answer").slideUp();
+        $(".accordion-container > li.active").removeClass("active");
+        $(this).addClass("active").find(".faq-answer").slideDown();
+    }
+    return false;
+});
