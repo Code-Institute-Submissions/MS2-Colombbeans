@@ -300,8 +300,86 @@ img#logo {
 }
 /* End of process section */
 
+/* FAQ section */
+.faq {
+    padding-top: 80px;
+}
+
+.accordion-container {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 35px;
+    list-style: none;
+}
+
+.accordion-container li {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto 30px auto;
+    border: 1px solid #4C2E05;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.accordion-container li.active,
+.accordion-container li:hover {
+    background-color: rgba(247, 215, 63, 0.5);;
+}
+
+.accordion-container li.active h4::after {
+    transform: rotate(45deg);
+}
+
+h4 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+h4::after {
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #4C2E05;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.faq-answer {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.faq-answer p {
+    position: relative;
+    display: block;
+    padding-right: 20px;
+}
+/* End of FAQ section */
+
 /* Media queries for smaller and medium devices */
 @media screen and (max-width: 1024px) {
+    /* Global styles */
+    .section-title {
+        font-size: 32px;
+    }
+
     /* Main content on home section */
     img#logo {
         display: none;
@@ -421,6 +499,11 @@ img#logo {
 
     .process-content > * + * {
         padding-top: 35px;
+    }
+
+    /* FAQ section */
+    #faq > ul > li > h4 {
+        font-size: 16px;
     }
 }
 
