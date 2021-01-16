@@ -395,11 +395,24 @@ h4::after {
 .contact-container {
     display: flex;
     flex-direction: row;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-top: 35px;
     padding-bottom: 35px;
     justify-content: space-evenly;
+}
+
+.contact-logo {
+    text-decoration: none;
+    color: #F7D73F;
+    font-weight: 400;
+    font-size: 32px;
+    transition: color 0.2s ease-in;
+}
+
+.contact-logo:hover {
+    text-decoration: none;
+    color: var(--main-white);
 }
 
 #contact > div.contact-container > div:nth-child(2) {
