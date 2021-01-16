@@ -147,17 +147,20 @@ img#logo {
     padding-bottom: 30px;
 }
 
-.home-text button {
+.contact-button {
     font-size: 26px;
     font-weight: 500;
     padding: 10px;
-    border-radius: 20px;
-    border-style: 2px solid rgba(--main-brown 0.8);
+    border-radius: 5px;
+    height: 60px;
+    width: 250px;
+    background-color: var(--main-white);
+    color: var(--main-brown);
+    transition: background-color 0.2s ease-in;
 }
 
-.home-text button:hover {
+.contact-button:hover {
     background-color: var(--main-yellow);
-    color: var(--main-brown);
 }
 
 .coordinates {
@@ -168,6 +171,7 @@ img#logo {
 
 .coordinates span {
     text-align: justify;
+    color: var(--main-white);
 }
 
 /* Desktop navigation menu */
