@@ -78,3 +78,19 @@ $('.accordion-container > li').click(function() {
     }
     return false;
 });
+
+//function to display map of coordinates
+function initMap() {
+  // The location of Colombbeans
+    const Colombbeans = { lat: 6.558530, lng: -75.827629 };
+    // The map, centered at Colombbeans
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 6,
+        center: Colombbeans,
+    });
+    // The marker, positioned at Colombbeans
+    const marker = new google.maps.Marker({
+        position: Colombbeans,
+        map: map,
+    });
+}
