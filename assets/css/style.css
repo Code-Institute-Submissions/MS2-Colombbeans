@@ -9,6 +9,14 @@
     scroll-behavior: smooth;
 }
 
+/* Website colors */
+:root {
+    --main-brown: #1C0E04;
+    --main-white: #FEFEFA;
+    --main-yellow: #F7D73F;
+    --secondary-yellow: #E2C044;
+}
+
 body {
     font-family: Barlow, sans-serif;
     overflow-x: hidden;
@@ -19,10 +27,18 @@ section {
     width: 100vw;
 }
 
-.section-title {
-    margin-left: 3rem;
+.process, .contact {
+    background-color: var(--main-brown);
+    color: var(--main-white);
 }
 
+.section-title {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 80px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 /* End of global styles */
 
 /* On scroll animation classes */
@@ -116,7 +132,7 @@ img#logo {
 .main-content {
     z-index: 1;
     position: absolute;
-    color: white;
+    color: var(--main-white);
     font-weight: 500;    
     font-size: 30px;
 }
@@ -136,12 +152,12 @@ img#logo {
     font-weight: 500;
     padding: 10px;
     border-radius: 20px;
-    border-style: 2px solid rgba(76, 46, 5, 0.8);
+    border-style: 2px solid rgba(--main-brown 0.8);
 }
 
 .home-text button:hover {
-    background-color: #f7d73f;
-    color: #4c2e05;
+    background-color: var(--main-yellow);
+    color: var(--main-brown);
 }
 
 .coordinates {
@@ -170,16 +186,16 @@ img#logo {
     display: flex;
     flex: 1;
     height: 100%;
-    background: #f7d73f;
-    border-right: 1px solid #e2c044;
-    border-left: 1px solid #e2c044;
+    background: var(--main-yellow);
+    border-right: 1px solid var(--secondary-yellow);
+    border-left: 1px solid var(--secondary-yellow);
 }
 
 .desktop-nav-item a {
     position: absolute;
     font-weight: 500;
     text-decoration: none;
-    color: #4c2e05;
+    color: var(--main-brown);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -187,17 +203,17 @@ img#logo {
 }
 
 .desktop-nav-item a.active {
-    background-color: rgba(76, 46, 5, 0.8);
+    background-color: rgba(var(--main-brown), 0.8);
     padding-left: 20px;
     padding-right: 20px;
-    color: #f7d73f;
+    color: var(--main-yellow);
     font-weight: 500;
 }
 
 /* Mobile navigation menu */
 #mobile-nav {
     display: none;
-    background-color: #F7D73F;
+    background-color: var(--main-yellow);
     height: 8vh;
     z-index: 1030;
     position: absolute;
@@ -216,7 +232,7 @@ img#logo {
 }
 
 .mobile-section-links {
-    color: #4C2E05;
+    color: var(--main-brown);
     text-decoration: none;
     font-size: 25px;
     text-transform: uppercase;
@@ -254,10 +270,6 @@ img#logo {
 /* End of features section */
 
 /* Process section */
-.process {
-    padding-top: 80px;
-}
-
 .process-content {
     display: flex;
     padding-top: 35px;
@@ -301,10 +313,6 @@ img#logo {
 /* End of process section */
 
 /* FAQ section */
-.faq {
-    padding-top: 80px;
-}
-
 .accordion-container {
     position: relative;
     display: block;
@@ -323,7 +331,7 @@ img#logo {
     height: auto;
     padding: 20px;
     margin: 0 auto 30px auto;
-    border: 1px solid #4C2E05;
+    border: 1px solid var(--main-brown);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s linear;
@@ -331,7 +339,7 @@ img#logo {
 
 .accordion-container li.active,
 .accordion-container li:hover {
-    background-color: rgba(247, 215, 63, 0.5);;
+    background-color: rgba(var(--secondary-yellow), 0.5);
 }
 
 .accordion-container li.active h4::after {
@@ -354,7 +362,7 @@ h4::after {
     position: absolute;
     right: 0;
     top: 0;
-    color: #4C2E05;
+    color: var(--main-brown);
     transition: all 0.3s ease-in-out;
     font-size: 18px;
 }
@@ -423,7 +431,7 @@ h4::after {
 
     .mobile-logo a {
         text-decoration: none;
-        color: #4C2E05;
+        color: var(--main-brown);
         font-weight: 400;
         font-size: larger;
     }
@@ -440,12 +448,12 @@ h4::after {
         width: 30px;
         height: 3px;
         margin: 5px;
-        background: #4C2E05;
+        background: var(--main-brown);
     }
 
     .mobile-nav-links {
         position: fixed;
-        background: #F7D73F;
+        background: var(--main-yellow);
         opacity: 1;
         height: 92vh;
         width: 100%;
