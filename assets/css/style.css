@@ -319,10 +319,10 @@ img#logo {
 .accordion-container {
     position: relative;
     display: block;
-    width: 80%;
+    width: 100%;
     height: auto;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-top: 35px;
     list-style: none;
 }
@@ -332,9 +332,10 @@ img#logo {
     display: block;
     width: 100%;
     height: auto;
-    padding: 20px;
-    margin: 0 auto 30px auto;
+    padding: 20px 30px 20px 20px;
+    margin: 0 20px 30px 0;
     border: 1px solid var(--main-brown);
+    color: var(--main-brown);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.2s linear;
@@ -342,7 +343,7 @@ img#logo {
 
 .accordion-container li.active,
 .accordion-container li:hover {
-    background-color: rgba(var(--secondary-yellow), 0.5);
+    background-color: var(--main-yellow);
 }
 
 .accordion-container li.active h4::after {
@@ -356,6 +357,7 @@ h4 {
     height: auto;
     margin-bottom: 10px;
     padding-right: 20px;
+    color: var(--main-brown);
 }
 
 h4::after {
@@ -380,7 +382,7 @@ h4::after {
 .faq-answer p {
     position: relative;
     display: block;
-    padding-right: 20px;
+    padding-right: 40px;
     text-align: justify;
 }
 /* End of FAQ section */
