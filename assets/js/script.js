@@ -94,3 +94,11 @@ function initMap() {
         map: map,
     });
 }
+
+//Function to flip features cards
+const card = document.querySelectorAll('.features-card');
+for (let i = 0; i < card.length; i++) {
+    card[i].addEventListener("click", function() {
+        card[i].classList.toggle("active");
+    });
+}
