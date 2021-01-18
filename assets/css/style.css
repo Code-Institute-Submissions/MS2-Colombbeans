@@ -255,7 +255,6 @@ img#logo {
 
 .features-container {
     padding: 0 2.5rem 2.5rem 2.5rem !important;
-    
 }
 
 .features-card {
@@ -439,7 +438,7 @@ h4::after {
 
 .contact-logo {
     text-decoration: none;
-    color: #F7D73F;
+    color: var(--main-yellow);
     font-weight: 400;
     font-size: 32px;
     transition: color 0.2s ease-in;
