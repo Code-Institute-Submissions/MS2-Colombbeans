@@ -206,8 +206,8 @@ img#logo {
     text-transform: uppercase;
 }
 
-.desktop-nav-item a.active {
-    background-color: rgba(var(--main-brown), 0.8);
+#desktop-nav div a.active {
+    background-color: var(--main-brown);
     padding-left: 20px;
     padding-right: 20px;
     color: var(--main-yellow);
