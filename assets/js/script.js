@@ -102,3 +102,31 @@ for (let i = 0; i < card.length; i++) {
         card[i].classList.toggle("active");
     });
 }
+
+//Function to mark active class on desktop navigation based on position
+const options = {
+    threshold: 0.6,
+};
+const activeNav = (entries, observer) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting && entry.intersectionRatio >= 0.4) {
+            let currentActiveNav = document.querySelector("#desktop-nav div a.active");
+
+            if (currentActiveNav) {
+                currentActiveNav.classList.remove("active");
+            }
+
+            let newActiveNav = document.querySelector(
+                `#desktop-nav div a[href="#${entry.target.getAttribute("id")}"]`
+            );
+            newActiveNav.classList.add("active");
+        }
+    });
+};
+
+const observer = new IntersectionObserver(activeNav, options);
+const sections = document.querySelectorAll("section");
+
+sections.forEach((section)=> {
+    observer.observe(section);
+});
