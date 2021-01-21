@@ -7,6 +7,7 @@
     border: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* Website colors */
@@ -20,6 +21,10 @@
 body {
     font-family: Barlow, sans-serif;
     overflow-x: hidden;
+}
+
+header {
+    position: relative;
 }
 
 section {
@@ -219,7 +224,7 @@ img#logo {
     display: none;
     background-color: var(--main-yellow);
     height: 8vh;
-    z-index: 1030;
+    z-index: 2000;
     position: absolute;
     position: fixed;
     width: 100%;
