@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Global styles */
@@ -5,7 +12,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -49,6 +57,8 @@ section {
 /* On scroll animation classes */
 .fade-in {
     opacity: 0;
+    -webkit-transition: opacity 1000ms ease-in-out;
+    -o-transition: opacity 1000ms ease-in-out;
     transition: opacity 1000ms ease-in-out;
 }
 
@@ -57,23 +67,37 @@ section {
 }
 
 .from-left {
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .from-right {
-    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
 }
 
 .from-left,
 .from-right {
+    -webkit-transition: opacity 500ms ease-in, -webkit-transform 400ms ease-in-out;
+    transition: opacity 500ms ease-in, -webkit-transform 400ms ease-in-out;
+    -o-transition: opacity 500ms ease-in, transform 400ms ease-in-out;
     transition: opacity 500ms ease-in, transform 400ms ease-in-out;
+    transition: opacity 500ms ease-in, transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
     opacity: 0;
 }
 
 .from-left.appear,
 .from-right.appear {
+    -webkit-transition: -webkit-transform 700ms ease-in-out;
+    transition: -webkit-transform 700ms ease-in-out;
+    -o-transition: transform 700ms ease-in-out;
     transition: transform 700ms ease-in-out;
-    transform: translateX(0);
+    transition: transform 700ms ease-in-out, -webkit-transform 700ms ease-in-out;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
 }
 /* End of on scroll animation classes */
@@ -101,8 +125,12 @@ section {
     height: 100vh;
     /* CSS gradient generated on https://cssgradient.io/ */
     background: rgb(255,255,255);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     opacity: 1;
+    -webkit-transition: color 200ms ease-in-out;
+    -o-transition: color 200ms ease-in-out;
     transition: color 200ms ease-in-out;
 }
 
@@ -123,7 +151,8 @@ section {
 .img-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 /* Main content on home section */
@@ -145,6 +174,8 @@ section {
     width: 250px;
     background-color: var(--main-white);
     color: var(--main-brown);
+    -webkit-transition: background-color 0.2s ease-in;
+    -o-transition: background-color 0.2s ease-in;
     transition: background-color 0.2s ease-in;
 }
 
@@ -160,13 +191,19 @@ section {
     width: 100%;
     position: fixed;
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .desktop-nav-item {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     height: 100%;
     background: var(--main-yellow);
     border-right: 1px solid var(--secondary-yellow);
@@ -180,7 +217,9 @@ section {
     color: var(--main-brown);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     text-transform: uppercase;
 }
 
@@ -204,12 +243,18 @@ section {
 }
 
 .mobile-nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     width: 50%;
     height: 92vh;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: auto;
 }
 
@@ -223,11 +268,18 @@ section {
 
 /* Features section */
 .features-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100vw;
     padding: 2.5rem;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     vertical-align: middle;
 }
 
@@ -237,7 +289,8 @@ section {
 
 .features-card {
     background-color: transparent;
-    perspective: 600px;
+    -webkit-perspective: 600px;
+            perspective: 600px;
     cursor: pointer;
 }
 .card-inner {
@@ -245,22 +298,31 @@ section {
     width: 100%;
     height: 100%;
     text-align: justify;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: -webkit-transform 0.6s;
+    -o-transition: transform 0.6s;
     transition: transform 0.6s;
-    transform-style: preserve-3d;
+    transition: transform 0.6s, -webkit-transform 0.6s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .features-card.active .card-inner {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
 }
 
 .card-inner img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     position: relative;
-    filter: sepia(80%);
+    -webkit-filter: sepia(80%);
+            filter: sepia(80%);
 }
 
 .card-inner img:hover {
-    filter: sepia(0);
+    -webkit-filter: sepia(0);
+            filter: sepia(0);
 }
 
 .card-inner img, 
@@ -274,19 +336,31 @@ section {
 .features-card-back {
     background: var(--main-yellow);
     color:var(--main-brown);
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
     position: absolute;
     top: 0;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 /* End of features section */
 
 /* Process section */
 .process-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 35px;
 }
@@ -302,7 +376,8 @@ section {
 }
 
 .process-content > * {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
 }
 
 .process-content > *  {
@@ -316,9 +391,16 @@ section {
 }
 
 #process > div > div > div:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 }
 
 #process > div > div > div:nth-child(2) iframe {
@@ -350,6 +432,8 @@ section {
     color: var(--main-brown);
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear;
     transition: background-color 0.2s linear;
 }
 
@@ -359,7 +443,9 @@ section {
 }
 
 .accordion-container li.active h4::after {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 h4 {
@@ -380,6 +466,8 @@ h4::after {
     right: 0;
     top: 0;
     color: var(--main-brown);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     font-size: 18px;
 }
@@ -405,13 +493,20 @@ h4::after {
 }
 
 .contact-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     padding-top: 35px;
     padding-bottom: 35px;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .contact-logo {
@@ -419,6 +514,8 @@ h4::after {
     color: var(--main-yellow);
     font-weight: 400;
     font-size: 32px;
+    -webkit-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
     transition: color 0.2s ease-in;
 }
 
@@ -428,7 +525,9 @@ h4::after {
 }
 
 #contact > div.contact-container > div:nth-child(2) {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 #map {
@@ -471,9 +570,15 @@ h4::after {
         height: 8vh;
         width: 150px;
         padding-left: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .mobile-logo a {
@@ -488,7 +593,9 @@ h4::after {
         cursor: pointer;
         right: 8%;
         top: 50%;
-        transform: translate(-5%, -50%);
+        -webkit-transform: translate(-5%, -50%);
+            -ms-transform: translate(-5%, -50%);
+                transform: translate(-5%, -50%);
         z-index: 2;
     }
     .line {
@@ -504,9 +611,14 @@ h4::after {
         opacity: 1;
         height: 92vh;
         width: 100%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         clip-path: circle(100px at 90% -20%);
         -webkit-clip-path: circle(100px at 90% -20%);
+        -webkit-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
         transition: all 1s ease-out;
     }
 
@@ -520,18 +632,28 @@ h4::after {
     }
 
     .mobile-nav-links li:nth-child(1) {
+        -webkit-transition: all 0.5s ease 0.2s;
+        -o-transition: all 0.5s ease 0.2s;
         transition: all 0.5s ease 0.2s;
     }
     .mobile-nav-links li:nth-child(2) {
+        -webkit-transition: all 0.5s ease 0.4s;
+        -o-transition: all 0.5s ease 0.4s;
         transition: all 0.5s ease 0.4s;
     }
     .mobile-nav-links li:nth-child(3) {
+        -webkit-transition: all 0.5s ease 0.4s;
+        -o-transition: all 0.5s ease 0.4s;
         transition: all 0.5s ease 0.4s;
     }
     .mobile-nav-links li:nth-child(4) {
+        -webkit-transition: all 0.5s ease 0.6s;
+        -o-transition: all 0.5s ease 0.6s;
         transition: all 0.5s ease 0.6s;
     }
     .mobile-nav-links li:nth-child(5) {
+        -webkit-transition: all 0.5s ease 0.8s;
+        -o-transition: all 0.5s ease 0.8s;
         transition: all 0.5s ease 0.8s;
     }
     li.fade {
@@ -540,7 +662,10 @@ h4::after {
 
     /* Process section */
     .process-content{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .process-content > * + * {
@@ -567,13 +692,17 @@ h4::after {
 
     /* Contact section */
     .contact-container {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         padding-top: 15px;
     }
 
     .general-contact,
     #contact > div.contact-container > div:nth-child(2) {
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
     }
 
     .general-contact {
