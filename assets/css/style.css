@@ -276,9 +276,7 @@ section {
             flex-direction: column;
     width: 100vw;
     padding: 2.5rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: start;
     vertical-align: middle;
 }
 
@@ -503,9 +501,7 @@ h4::after {
     padding-right: 2.5rem;
     padding-top: 35px;
     padding-bottom: 35px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: start;
 }
 
 .contact-logo {
@@ -706,5 +702,9 @@ h4::after {
 
     .general-contact {
         font-size: 16px;
+    }
+
+    #contact > div.contact-container > div.p-5 {
+        padding-left: 0 !important;
     }
 }
