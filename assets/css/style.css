@@ -127,29 +127,13 @@ section {
 }
 
 /* Main content on home section */
-img#logo {
-    height: 200px;
-    top: -20px;
-    transform: translateY(-20%);
-    padding-left: 40px;
-}
-
-.main-content {
-    z-index: 1;
-    position: absolute;
-    color: var(--main-white);
-    font-weight: 500;    
-    font-size: 30px;
-}
-
-.home-text {
-    transform: translateY(100px);
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.home-text p {
-    padding-bottom: 30px;
+.main-content-container {
+    z-index: 2;
+    position: relative;
+    color: #FEFEFA;
+    min-height: 50vh;
+    font-size: 32px;
+    font-weight: 400;
 }
 
 .contact-button {
@@ -166,17 +150,6 @@ img#logo {
 
 .contact-button:hover {
     background-color: var(--main-yellow);
-}
-
-.coordinates {
-    float: right;
-    padding-right: 100px;
-    padding-top: 200px;
-}
-
-.coordinates span {
-    text-align: justify;
-    color: var(--main-white);
 }
 
 /* Desktop navigation menu */
@@ -476,24 +449,12 @@ h4::after {
     }
 
     /* Main content on home section */
-    img#logo {
-        display: none;
+    #home > div.row.position-relative.p-5 {
+    visibility: hidden;
     }
-    
-    .main-content {
-        padding-top: 200px;
+
+    .main-content-container {
         font-size: 24px;
-    }
-
-    .coordinates {
-        padding-right: 100px;
-        padding-top: 200px;
-    }
-
-    .home-text {
-        margin-left: 100px;
-        margin-right: 100px;
-        text-align: justify;
     }
 
     /* Desktop navigation menu */
@@ -577,9 +538,6 @@ h4::after {
         opacity: 1 !important;
     }
 
-    /* Features section */
-    
-
     /* Process section */
     .process-content{
         flex-direction: column;
@@ -598,21 +556,10 @@ h4::after {
 /* Media queries for small devices */
 @media screen and (max-width: 768px) {
     /* Main content on home section */
-    .main-content {
-        padding: 0;
-        font-size: 18px;
+    .main-content-container {
+        font-size: 16px;
     }
-    .home-text {
-        margin: 40px;
-        padding-top: 80px;
-    }
-
-    .coordinates {
-        margin-right: 40px;
-        padding-right: 0;
-        padding-top: 150px;
-    }
-
+    
     .contact-button {
         font-size: 18px;
         padding-top: 10px;
