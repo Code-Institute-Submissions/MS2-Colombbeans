@@ -237,7 +237,6 @@ section {
     background-color: var(--main-yellow);
     height: 8vh;
     z-index: 2000;
-    position: absolute;
     position: fixed;
     width: 100%;
 }
