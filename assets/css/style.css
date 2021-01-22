@@ -239,6 +239,7 @@ section {
     z-index: 2000;
     position: fixed;
     width: 100%;
+    top: 0;
 }
 
 .mobile-nav-links {
