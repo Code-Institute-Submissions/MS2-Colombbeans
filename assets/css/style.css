@@ -709,3 +709,13 @@ h4::after {
         padding-left: 0 !important;
     }
 }
+
+/* Specification for mobile menu to display on iPhone6 */
+@media only screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) { 
+        #mobile-nav > ul {
+            overflow: visible;
+        }
+    }
