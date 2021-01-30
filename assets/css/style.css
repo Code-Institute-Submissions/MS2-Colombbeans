@@ -147,16 +147,31 @@ section {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+        object-fit: cover;
 }
 
 /* Main content on home section */
 .main-content-container {
+    text-align: center;
+    color: var(--main-white);
+    height: 100vh;
+    width: 100vw;
+}
+.main-content-container div {
+    position: absolute;
     z-index: 2;
-    position: relative;
-    color: #FEFEFA;
-    font-size: 32px;
-    font-weight: 400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+.main-content-container div p {
+    margin-top: 2.5rem;
+    text-align: justify;
 }
 
 .row {
@@ -165,13 +180,13 @@ section {
 }
 
 .contact-button {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
-    height: 60px;
-    width: 250px;
-    background-color: var(--main-white);
+    height: 100%;
+    width: fit-content;
+    background-color: var(--main-yellow);
     color: var(--main-brown);
     -webkit-transition: background-color 0.2s ease-in;
     -o-transition: background-color 0.2s ease-in;
@@ -179,7 +194,12 @@ section {
 }
 
 .contact-button:hover {
-    background-color: var(--main-yellow);
+    background-color: var(--main-white);
+}
+
+#home > div.main-content-container > div > button > a {
+    color: var(--main-brown);
+    text-decoration: none;
 }
 
 /* Desktop navigation menu */
@@ -240,7 +260,6 @@ section {
     width: 100%;
     top: 0;
     left: 0;
-    overflow-x: hidden;
 }
 
 .mobile-nav-links {
@@ -551,11 +570,7 @@ h4::after {
 
     /* Main content on home section */
     #home > div.row.position-relative.p-5 {
-    visibility: hidden;
-    }
-
-    .main-content-container {
-        font-size: 24px;
+        display: none;
     }
 
     /* Desktop navigation menu */
@@ -565,8 +580,7 @@ h4::after {
 
     /* Mobile navigation menu */
     #mobile-nav {
-        display: block;
-        position: relative;
+        display: initial;
     }
 
     .mobile-logo {
@@ -684,16 +698,6 @@ h4::after {
 
 /* Media queries for small devices */
 @media screen and (max-width: 768px) {
-    /* Main content on home section */
-    .main-content-container {
-        font-size: 16px;
-    }
-    
-    .contact-button {
-        font-size: 18px;
-        padding-top: 10px;
-    }
-
     /* Contact section */
     .contact-container {
         -webkit-box-orient: vertical;
@@ -716,4 +720,15 @@ h4::after {
     #contact > div.contact-container > div.p-5 {
         padding-left: 0 !important;
     }
+}
+
+/* Media queries for larger devices */
+@media screen and (min-width: 1024px) {
+    .main-content-container div {
+        font-size: 32px;
+        padding: 0px 100px;
+    }  
+    .contact-button {
+        font-size: 32px;
+    }  
 }
