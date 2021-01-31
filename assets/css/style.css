@@ -434,10 +434,6 @@ body {
 /* End of process section */
 
 /* FAQ section */
-#faq {
-    min-height: 100vh;
-}
-
 .accordion-container {
     position: relative;
     display: block;
@@ -522,6 +518,10 @@ h4::after {
 /* End of FAQ section */
 
 /* Contact section */
+.contact{
+    min-height: 100vh;
+}
+
 .general-contact {
     font-size: 24px;
 }
@@ -560,6 +560,26 @@ h4::after {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+}
+
+#form div {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+#form div > h3 {
+    color: var(--main-yellow);
+}
+
+#form div button {
+    background-color: var(--main-yellow);
+    -webkit-transition: background-color 0.2s ease-in;
+    -o-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#form div button:hover {
+    background-color: var(--main-white);
 }
 
 #map {
