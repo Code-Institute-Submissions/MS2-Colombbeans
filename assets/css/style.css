@@ -301,6 +301,7 @@ body {
     width: 100vw;
     padding: 2.5rem;
     align-items: center;
+    text-align: justify;
 }
 
 .features-container {
@@ -512,7 +513,7 @@ h4::after {
 
 .faq div h6 {
     padding: 1rem 2.5rem 2.5rem 2.5rem;
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
 }
 /* End of FAQ section */
