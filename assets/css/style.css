@@ -43,7 +43,7 @@ section {
 .section-title {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    padding-top: 80px;
+    padding-top: 60px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -301,12 +301,11 @@ section {
             flex-direction: column;
     width: 100vw;
     padding: 2.5rem;
-    align-items: start;
-    vertical-align: middle;
+    align-items: center;
 }
 
 .features-container {
-    padding: 0 2.5rem 2.5rem 2.5rem !important;
+    padding: 0 2.5rem 0 2.5rem !important;
 }
 
 .features-card {
@@ -319,6 +318,7 @@ section {
     position: relative;
     width: 100%;
     height: 100%;
+    padding-top: 40px;
     text-align: justify;
     -webkit-transition: -webkit-transform 0.6s;
     transition: -webkit-transform 0.6s;
@@ -338,8 +338,6 @@ section {
     -o-object-fit: cover;
        object-fit: cover;
     position: relative;
-    -webkit-filter: sepia(80%);
-            filter: sepia(80%);
 }
 
 .card-inner img:hover {
@@ -356,7 +354,7 @@ section {
 }
 
 .features-card-back {
-    background: var(--main-yellow);
+    background: transparent;
     color:var(--main-brown);
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
@@ -376,6 +374,7 @@ section {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    cursor: pointer;
 }
 /* End of features section */
 
@@ -676,6 +675,10 @@ h4::after {
     li.fade {
         opacity: 1 !important;
     }
+    /* Features section */
+    .features-text {
+        padding-top: 1rem;
+    }
 
     /* Process section */
     .process-content{
@@ -697,6 +700,16 @@ h4::after {
 
 /* Media queries for small devices */
 @media screen and (max-width: 768px) {
+    /* Features section */
+    #features > div.features-text > div {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #features > div.row.features-container.align-items-center.justify-content-center > div:nth-child(1) > div {
+        padding-top: 0px;
+    }
+
     /* Contact section */
     .contact-container {
         -webkit-box-orient: vertical;
