@@ -556,6 +556,11 @@ h4::after {
     color: var(--main-white);
 }
 
+#contact > div.row.pt-3.pb-5 > div.contact-container.col-lg-5.col-md-12.col-sm-12.align-self-center.justify-content-center > div > p:nth-child(3) > a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
 #contact > div.contact-container > div:nth-child(2) {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;

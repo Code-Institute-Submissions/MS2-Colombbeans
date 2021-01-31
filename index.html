@@ -248,7 +248,7 @@
                     </p>
                     <p>
                         <i class="fas fa-phone pr-2"></i>+57 666 555 000<br>
-                        <i class="far fa-envelope pr-2"></i>hola@colombbeans.co
+                        <a href="mailto:hola@colombbeans.co"><i class="far fa-envelope pr-2"></i>hola@colombbeans.co</a>
                     </p>
                 </div>
             </div>
@@ -259,20 +259,21 @@
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 pb-4">
                         <label for="name" class="form-label text-uppercase larger">Name</label>
-                        <input type="text" name="name" id="name" class="form-control-lg w-100" placeholder="Your name">
+                        <input type="text" name="name" id="name" class="form-control-lg w-100" placeholder="Your name" required>
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 pb-4">
                         <label for="email" class="form-label text-uppercase larger">Email address</label>
-                        <input type="email" class="form-control-lg w-100" id="email" placeholder="name@example.com">
+                        <input type="email" class="form-control-lg w-100" id="email" placeholder="name@example.com" required>
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 pb-4">
                         <label for="location" class="form-label text-uppercase larger">Location</label>
-                        <input type="text" name="location" id="location" placeholder="Country" class="form-control-lg w-100">
+                        <input type="text" name="location" id="location" placeholder="Country" class="form-control-lg w-100" required>
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 pb-4">
                         <label for="message" class="form-label text-uppercase larger">Tell us more about your needs</label>
                         <textarea class="form-control-lg w-100" id="message" name="message" rows="3" placeholder="Message"
-                            style="height:100%;"></textarea>
+                            style="height:100%;" required>
+                        </textarea>
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 pb-4">
                         <button type="submit" value="Send" class="w-100 btn-lg">Send</button>
