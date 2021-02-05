@@ -64,7 +64,7 @@ sliders.forEach(slider => {
 // Credit for solution https://stackoverflow.com/questions/47712987/font-awesome-5-on-pseudo-elements
 window.FontAwesomeConfig = {
     searchPseudoElements: true
-}
+};
 
 //Function to make the accordion containers open and close onclick
 $('.accordion-container > li > .faq-answer').hide();
