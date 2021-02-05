@@ -23,6 +23,8 @@
     --main-white: #FEFEFA;
     --main-yellow: #F7D73F;
     --secondary-yellow: #E2C044;
+    --invalid-red: #CD0000;
+    --valid-green: #4CA64C;
 }
 
 body {
@@ -575,6 +577,54 @@ h4::after {
 
 #form div > h3 {
     color: var(--main-yellow);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-group i {
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    visibility: hidden;
+}
+.form-group small {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    visibility: hidden;
+}
+
+.form-group.success input {
+    border: solid 3px;
+    border-color: var(--valid-green);
+}
+
+.form-group.error input {
+    border: solid 3px;
+    border-color: var(--invalid-red);
+}
+
+.form-group.success i.fa-check-circle {
+    visibility: visible;
+    color: var(--valid-green);
+}
+
+.form-group.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: var(--invalid-red);
+}
+
+.form-group.error small {
+    visibility: visible;
+    color: var(--invalid-red);
 }
 
 #form div button {
