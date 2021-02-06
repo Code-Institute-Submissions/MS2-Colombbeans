@@ -167,19 +167,32 @@
     </section>
     <section id="process" class="process">
         <h1 class="section-title">The Process</h1>
-        <div class="process-container">
-            <div class="process-content">
-                <div>
-                    <p class="slide-in from-left"><img src="assets/images/process-section/1.png" alt="Two coffee beans" class="pr-2">In the first step of the process, only the highest quality seeds are selected to be planted. For these, it could take anywhere between four and six months to start flowering. Arabica coffee flowers are white, small and highly fragrant, similar to jasmines.</p>
-                    <p class="slide-in from-left"><img src="assets/images/process-section/2.png" alt="Jasmine flower" class="pr-2">Once the flowers start opening, these only last a few days, resulting in berries that will begin to ripen from a yellow to a red glossy red, for this also called cherries. That’s when they are ready to be harvested in a curated hand-picking process that carefully selects the finest beans.</p>
-                    <p class="slide-in from-left"><img src="assets/images/process-section/3.png" alt="Water tap" class="pr-2">Depulping, also called the wet process, starts right after. In this step of the making process, the coffee seeds are mechanically separated from the outer layer of flesh. The beans are then left to ferment and are later washed before being spread out in the sun to dry. This would remove the moisture and result in parchment coffee.</p>
-                    <p class="slide-in from-left"><img src="assets/images/process-section/4.png" alt="Coffee mill" class="pr-2">Next on in the process, milling the beans will get them ready to be marketed as green coffee. At this last step, the last layer of shell, the entire dried husk, around the cherries is removed.</p>
-                    <p class="slide-in from-left"><img src="assets/images/process-section/5.png" alt="Coffee bag" class="pr-2">Finally, the milled beans, also known as green coffee are sorted by quality and size to later be packed in bags and exported. Naturally, as it has to be, roasting happens in the importing countries, as the freshly roasted beans must be made available to the customers in the shortest of times, for the aroma to be enjoyed at its peak.</p>
-                </div>
-                <div>
-                    <iframe class="process-media pb-5 fade-in" src="https://www.youtube-nocookie.com/embed/zYVL6JJYmpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe class="process-media pb-5 fade-in" src="https://www.youtube-nocookie.com/embed/oBjIqxJmlV8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <div class="row pt-3 pb-5 process-container">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <p class="slide-in from-left"><img src="assets/images/process-section/1.png" alt="Two coffee beans" class="pr-2">In
+                    the first step of the process, only the highest quality seeds are selected to be planted. For these, it could
+                    take anywhere between four and six months to start flowering. Arabica coffee flowers are white, small and highly
+                    fragrant, similar to jasmines.</p>
+                <p class="slide-in from-left"><img src="assets/images/process-section/2.png" alt="Jasmine flower" class="pr-2">Once
+                    the flowers start opening, these only last a few days, resulting in berries that will begin to ripen from a
+                    yellow to a red glossy red, for this also called cherries. That’s when they are ready to be harvested in a
+                    curated hand-picking process that carefully selects the finest beans.</p>
+                <p class="slide-in from-left"><img src="assets/images/process-section/3.png" alt="Water tap" class="pr-2">Depulping,
+                    also called the wet process, starts right after. In this step of the making process, the coffee seeds are
+                    mechanically separated from the outer layer of flesh. The beans are then left to ferment and are later washed
+                    before being spread out in the sun to dry. This would remove the moisture and result in parchment coffee.</p>
+                <p class="slide-in from-left"><img src="assets/images/process-section/4.png" alt="Coffee mill" class="pr-2">Next on
+                    in the process, milling the beans will get them ready to be marketed as green coffee. At this last step, the
+                    last layer of shell, the entire dried husk, around the cherries is removed.</p>
+                <p class="slide-in from-left"><img src="assets/images/process-section/5.png" alt="Coffee bag" class="pr-2">Finally,
+                    the milled beans, also known as green coffee are sorted by quality and size to later be packed in bags and
+                    exported. Naturally, as it has to be, roasting happens in the importing countries, as the freshly roasted beans
+                    must be made available to the customers in the shortest of times, for the aroma to be enjoyed at its peak.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                <!-- Videos used for development purposes only, all rights must be attributed to the original owners on YouTube-->
+                <object class="pb-5 fade-in" data="https://www.youtube-nocookie.com/embed/zYVL6JJYmpQ" width="100%" height="300px"></object>
+                <object class="pb-5 fade-in" data="https://www.youtube-nocookie.com/embed/oBjIqxJmlV8" width="100%" height="300px"></object>
             </div>
         </div>
     </section>
@@ -253,7 +266,7 @@
                 </div>
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12 px-0">
-                <form onsubmit="return sendMail(this);" class="row justify-content-center flex-column align-items-center" id="form">
+                <form class="row justify-content-center flex-column align-items-center" id="form">
                     <div class="col-lg-8 col-md-12 col-sm-12">
                         <h3 class="text-uppercase larger pb-3">Let's do business!</h3>
                     </div>
@@ -287,24 +300,25 @@
                         <small>Error Message</small>
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 pb-4">
-                        <button value="Send" class="w-100 btn-lg" id="submit">Send</button>
+                        <button type="submit" value="Send" class="w-100 btn-lg" id="submit">Send</button>
                     </div>
                 </form>
             </div>
         </div>
         <div class="modal fade" tabindex="-1" role="dialog" id="submitForm">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <p class="text-center text-dark">We have received your inquiry successfully, and we will get back to you with our reply as soon as
-                                possible</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
-                        </div>
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="text-center text-dark">We have received your inquiry successfully, and we will get back to you
+                            with our reply as soon as
+                            possible</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
+        </div>
         <div id="map"></div>
     </section>
 
