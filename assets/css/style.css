@@ -405,6 +405,10 @@ body {
 /* End of process section */
 
 /* FAQ section */
+#faq {
+    min-height: 100vh;
+}
+
 .accordion-container {
     position: relative;
     display: block;
