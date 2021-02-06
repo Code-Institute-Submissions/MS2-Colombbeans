@@ -385,55 +385,23 @@ body {
     min-height: 100vh;
 }
 
-.process-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 35px;
-}
-
 .process-container {
-    width: 100%;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.process-media {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.process-content > * {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-}
-
-.process-content > *  {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-}
-
-.process-content div p {
+.process-container div p {
     text-align: justify;
     line-height: 250%;
 }
 
-#process > div > div > div:nth-child(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
+#process > div > div.col-lg-6.col-md-12.col-sm-12.col-12 {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    flex-direction: column;
 }
 
-#process > div > div > div:nth-child(2) iframe {
-    width: 100%;
-    height: 300px;
-}
 /* End of process section */
 
 /* FAQ section */
@@ -767,18 +735,6 @@ h4::after {
     /* Features section */
     .features-text {
         padding-top: 1rem;
-    }
-
-    /* Process section */
-    .process-content{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-
-    .process-content > * + * {
-        padding-top: 35px;
     }
 
     /* FAQ section */
