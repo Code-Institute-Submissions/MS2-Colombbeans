@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const form = document.getElementById("form");
 const name = document.getElementById("name");
 const email = document.getElementById("email");
@@ -8,8 +10,15 @@ const message = document.getElementById("message");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-  // Call checkInputs function
-    checkInputs();
+    if(checkInputs()) {
+        $("#submitForm").modal('show');
+        sendMail(form);
+        form.reset();
+        $(".form-group").removeClass("success");
+        return true;
+    }
+
+    return false;
 });
 
 // Function to validate inputs
@@ -19,9 +28,12 @@ function checkInputs() {
     const locationValue = locality.value;
     const messageValue = message.value;
 
+    let result = true;
+
     // Validate Name field
     if (!nameValue) {
         setErrorFor(name, "Please enter your name");
+        result = false;
     } else {
         setSuccessFor(name);
     }
@@ -29,8 +41,10 @@ function checkInputs() {
     // Validate Email field
     if (emailValue === "") {
         setErrorFor(email, "Please enter your email address");
+        result = false;
     } else if (!isEmail(emailValue)) {
         setErrorFor(email, "Please enter a valid email address");
+        result = false;
     } else {
         setSuccessFor(email);
     }
@@ -38,6 +52,7 @@ function checkInputs() {
     // Validate Location field
     if (locationValue === "") {
         setErrorFor(locality, "Please enter your location");
+        result = false;
     } else {
         setSuccessFor(locality);
     }
@@ -45,9 +60,12 @@ function checkInputs() {
     // Validate Message field
     if (messageValue === "") {
         setErrorFor(message, "Please let us know more about your inquiry");
+        result = false;
     } else {
         setSuccessFor(message);
     }
+
+    return result;
 }
 
 // Function that adds error class
@@ -57,36 +75,26 @@ function setErrorFor(input, message) {
 
     //Add error message inside small tag
     small.innerText = message;
-    //Add error class
-    formGroup.className = "form-group col-lg-8 col-md-12 col-sm-12 pb-4 error";
+
+    //Add error class and remove success class
+    $(formGroup).removeClass("success");
+    $(formGroup).addClass("error");
 }
 
 // Function that adds success class
 function setSuccessFor(input) {
     const formGroup = input.parentElement;
-    //Add success class
-    formGroup.className = "form-group col-lg-8 col-md-12 col-sm-12 pb-4 success";
+
+    //Add success class and remove error class
+    $(formGroup).removeClass("error");
+    $(formGroup).addClass("success");
 }
 
 // Function to check if email input is valid
 function isEmail(email) {
-    // Regex from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email
-    return /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(email);
+    // Regex from https://www.w3resource.com/javascript/form/email-validation.php
+    return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
 }
-
-// Function to display modal on form submission
-$("#form").on("submit", function (e) {
-    var showModal = true;
-    $(".form-control").each(function (element) {
-        if ($(this).val() == "") {
-            showModal = false;
-        }
-    });
-    if (showModal) {
-        $("#submitForm").modal("show");
-    }
-});
-
 
 // Function to send email via EmailJS
 function sendMail(contactForm) {
@@ -96,9 +104,13 @@ function sendMail(contactForm) {
         "location": contactForm.location.value,
         "message": contactForm.message.value
     })
-    .then;
+        .then(
+            function (response) {
+                console.log("SUCCESS", response);
+            },
+            function (error) {
+                console.log("FAILED", error);
+            });
 
-        // Reset input fields after submission
-        document.getElementById("form").reset();
     return false;
 }
