@@ -240,6 +240,7 @@ body {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 #desktop-nav div a.active {
