@@ -121,8 +121,8 @@ body {
     height: auto;
     /* CSS gradient generated on https://cssgradient.io/ */
     background: rgb(255,255,255);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
     background: -o-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     opacity: 1;
     -webkit-transition: color 200ms ease-in-out;
@@ -162,10 +162,17 @@ body {
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
 }
@@ -280,7 +287,9 @@ body {
             flex-direction: column;
     width: 100vw;
     padding: 2.5rem;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: justify;
 }
 
@@ -364,9 +373,15 @@ body {
 
 .process-container {
     padding: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .process-container div p {
@@ -375,8 +390,13 @@ body {
 }
 
 #process > div > div.col-lg-6.col-md-12.col-sm-12.col-12 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 /* End of process section */
 
@@ -489,7 +509,9 @@ h4::after {
     padding-right: 2.5rem;
     padding-top: 35px;
     padding-bottom: 35px;
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
 }
 
 .contact-logo {
@@ -579,6 +601,8 @@ h4::after {
     background-color: var(--main-yellow);
     -webkit-transition: background-color 0.2s ease-in;
     -o-transition: background-color 0.2s ease-in;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
 }
 
