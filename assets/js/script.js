@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 $(document).ready(function () {
     //Function to animate the slideshow overlay from the home section
     $(".home-gallery > div:gt(0)").hide();
