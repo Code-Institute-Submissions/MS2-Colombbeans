@@ -179,29 +179,6 @@ body {
     margin-right: 0;
 }
 
-.contact-button {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px;
-    border-radius: 5px;
-    height: 100%;
-    width: fit-content;
-    background-color: var(--main-yellow);
-    color: var(--main-brown);
-    -webkit-transition: background-color 0.2s ease-in;
-    -o-transition: background-color 0.2s ease-in;
-    transition: background-color 0.2s ease-in;
-}
-
-.contact-button:hover {
-    background-color: var(--main-white);
-}
-
-#home > div.main-content-container > div > button > a {
-    color: var(--main-brown);
-    text-decoration: none;
-}
-
 /* Desktop navigation menu */
 #desktop-nav {
     height: 66px;
@@ -401,7 +378,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 /* End of process section */
 
 /* FAQ section */
@@ -788,8 +764,5 @@ h4::after {
     .main-content-container div {
         font-size: 32px;
         padding: 0px 100px;
-    }  
-    .contact-button {
-        font-size: 32px;
-    }  
+    }
 }
