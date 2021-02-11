@@ -21,7 +21,7 @@ form.addEventListener("submit", (e) => {
     return false;
 });
 
-// Function to validate inputs
+// Function to validate inputs. Credit for validation inspo from: https://codepen.io/FlorinPop17/pen/OJJKQeK
 function checkInputs() {
     const nameValue = name.value;
     const emailValue = email.value;
@@ -96,7 +96,7 @@ function isEmail(email) {
     return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
 }
 
-// Function to send email via EmailJS
+// Function to send email via EmailJS. Credit for inspo from CI mini-lesson on "Sending Emails Using EmailJS"
 function sendMail(contactForm) {
     emailjs.send("service_ci6295f", "colombbeans", {
         "from_name": contactForm.name.value,
