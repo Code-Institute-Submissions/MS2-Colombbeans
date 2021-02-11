@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
     //Function to animate the slideshow overlay from the home section
+    //Credit for inspo from: https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/
     $(".home-gallery > div:gt(0)").hide();
     setInterval(function () {
         $(".home-gallery > div:first")
@@ -14,6 +15,7 @@ $(document).ready(function () {
 });
 
 //Function to make the hamburger button display the navigation menu
+//Credit for inspo from: https://www.youtube.com/watch?v=H4MkGzoACpQ
 const hamburger = document.querySelector(".hamburger");
 const mobileNavLinks = document.querySelector(".mobile-nav-links");
 const mobileLinks = document.querySelectorAll(".mobile-nav-links li");
@@ -33,6 +35,7 @@ mobileNavLinks.addEventListener("click", () => {
 });
 
 //Function for fade-in and slide-in animation effects
+//Credit for inspo from: https://www.youtube.com/watch?v=huVJW23JHKQ
 const faders = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll(".slide-in");
 const appearOptions = {
@@ -63,12 +66,13 @@ sliders.forEach(slider => {
 });
 
 // Script to enable pseudoelements to work with Fontawesome
-// Credit for solution https://stackoverflow.com/questions/47712987/font-awesome-5-on-pseudo-elements
+// Credit for solution from https://stackoverflow.com/questions/47712987/font-awesome-5-on-pseudo-elements
 window.FontAwesomeConfig = {
     searchPseudoElements: true
 };
 
 //Function to make the accordion containers open and close onclick
+//Credit for inspo from: https://codepen.io/johnhubler/pen/bGpMYwq
 $('.accordion-container > li > .faq-answer').hide();
 $('.accordion-container > li').click(function() {
         if ($(this).hasClass("active")) {
@@ -81,7 +85,8 @@ $('.accordion-container > li').click(function() {
     return false;
 });
 
-//function to display map of coordinates
+//Function to display map of coordinates
+//Documentation used as inspo for running the maps code from: https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-typescript
 function initMap() {
   // The location of Colombbeans
     const Colombbeans = { lat: 6.558530, lng: -75.827629 };
@@ -106,6 +111,7 @@ for (let i = 0; i < card.length; i++) {
 }
 
 //Function to mark active class on desktop navigation based on position
+//Credit for inspo to Kevin Powell explaining intersection observer and how to use it here https://www.youtube.com/watch?v=T8EYosX4NOo and https://www.youtube.com/watch?v=huVJW23JHKQ
 const options = {
     threshold: 0.6,
 };
