@@ -697,11 +697,13 @@ h4::after {
         -webkit-transition: all 1s ease-out;
         -o-transition: all 1s ease-out;
         transition: all 1s ease-out;
+        pointer-events: none;
     }
 
     .mobile-nav-links.open {
         clip-path: circle(1800px at 90% -20%);
         -webkit-clip-path: circle(1800px at 90% -20%);
+        pointer-events: all;
     }
 
     .mobile-nav-links li {
