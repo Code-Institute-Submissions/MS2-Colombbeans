@@ -64,14 +64,7 @@ body {
             transform: translateX(-50%);
 }
 
-.from-right {
-    -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
-            transform: translateX(50%);
-}
-
-.from-left,
-.from-right {
+.from-left {
     -webkit-transition: opacity 500ms ease-in, -webkit-transform 400ms ease-in-out;
     transition: opacity 500ms ease-in, -webkit-transform 400ms ease-in-out;
     -o-transition: opacity 500ms ease-in, transform 400ms ease-in-out;
@@ -80,8 +73,7 @@ body {
     opacity: 0;
 }
 
-.from-left.appear,
-.from-right.appear {
+.from-left.appear {
     -webkit-transition: -webkit-transform 700ms ease-in-out;
     transition: -webkit-transform 700ms ease-in-out;
     -o-transition: transform 700ms ease-in-out;
