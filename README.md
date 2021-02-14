@@ -156,9 +156,9 @@ Forking the GitHub repository allows you to make a copy of the original to view 
 1. Log in to GitHub and locate the [project's repository](https://github.com/MihaelaVacarus/MS2-Colombbeans).
 2. One way to do it is to click on the Code button above the list of files and select "Open with GitHub Desktop" to clone and open the repository with GitHub Desktop. You can then follow the prompts in GitHub Desktop to complete the clone. More information with detailed screenshots can be found [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-a-repository-from-github-to-github-desktop).
 3. Another way is, after clicking on the Code button above the list of files, to clone the repository using HTTPS. For this:
-    - Copy the HTTPS link 
-    - Open the terminal and change the current working directory to the location where you want the cloned directory
-    - Type `git clone` and then paste the URL, 
+    - Copy the HTTPS link.
+    - Open the terminal and change the current working directory to the location where you want the cloned directory.
+    - Type `git clone` and then paste the URL.
     - Press Enter to create your local clone. 
 More information with screenshots can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-using-the-command-line).
  
