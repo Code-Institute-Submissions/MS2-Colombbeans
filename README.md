@@ -58,6 +58,7 @@ Some small changes have been made to the original wireframes:
     - The "Let's do business" button has also been removed from here and in its place, the form has been integrated with the same title.
     - The map, originally on the right side on desktop view, is now stacked below the contact details and the contact form.
     - As newly integrated part of this section, the form labels have been slightly edited: *Name*, *Email Address*, *Location*, *Tell us more about your needs*.
+    - I decided to remove the *Copyright* text from the original wireframe.
 
 ## Features
 #### Existing features
@@ -125,6 +126,10 @@ Some small changes have been made to the original wireframes:
 ## Testing
 Testing documentation can be found separately [here](assets/docs/testing.md).
 
+## Project barriers and solutions
+- For the flipping card images on the second section, it was problematic to fit the text on the back of the images. As images were resized for smaller screens, the back of the card became too small to fit the text. Originally, the back was yellow, so in order to solve this, I adjusted the padding a bit more and made the back transparent, so the overlap wouldn't be visible.
+- Because of the colored background on the first section, it was hard to read the banner text. As a solution, I started looking around and came across [CSS Gradient](https://cssgradient.io/), which allowed me to design an overlay to make the images a bit darker, so the text would pop out more.
+
 ## IDE and version control
 The project has been written in [Gitpod](https://www.gitpod.io/) and I have used [Git](https://git-scm.com/) for version control.
 
@@ -191,4 +196,5 @@ All content was written by the developer.
 ### Acknowledgements
 - My mentor Allen Thomas Varghese for his feedback and advice throughout the different phases of the project and the extra help with getting the validation of the contact form to work as expected.
 - Slack community for sharing their feedback on my website and giving very useful advice.
+- Special thanks to Scott Kipp and Johann Alberts from Tutor Support at CI for helping me troubleshoot some validation issues for the contact form.
 - CI for the interactive lessons that allowed me to further build on that knowledge.
