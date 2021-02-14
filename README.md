@@ -19,7 +19,7 @@
     - #### As a user I want to be able to make an inquiry based on my needs, so that I can maybe start a business relationship.
     
 -   ### The five elements of user experience
-    - #### The **strategy** plane. For the users, the site will provide information on the Colombian coffee supplier located in Antioquia, why this coffee is the best choice for their shop, how the coffee beans are harvested and processed, and the possibility of inquiring more to initiate a business relationship. For the company, the site will provide exposure to direct clients, eliminating wholesaler costs and as a result offering competitive pricing models.
+    - #### The **strategy** plane. For the users, the site will provide information on the Colombian coffee supplier located in Antioquía, why this coffee is the best choice for their shop, how the coffee beans are harvested and processed, and the possibility of inquiring more to initiate a business relationship. For the company, the site will provide exposure to direct clients, eliminating wholesaler costs and as a result offering competitive pricing models.
     - #### The **scope** plane. Features to be included: users can fill in a form to send an email inquiring for more information, a collapsible FAQ section, scrollspy navigation, API Google Maps location. As for the content, the following will be displayed: powerful slogan and company GPS coordinates, information on key features of the high quality coffee beans, what the production process looks like, frequently asked questions that align with the relevant user stories and provide more additional information, and contact details.
     - #### The **structure** plane. The website is structured into five different sections and a linked contact form. The first section or "Home" consists of five elements: the logo on the upper left corner, a slogan in the center of the viewport, a "Let's do business" button linking to the contact form right below the slogan and the GPS coordinates of the coffee plantations in Colombia, right in the tropics. In the background of this first section, there will be an image slideshow playing. The second section called "The Coffee" consists of two elements coming together on the screen with a fade in effect: an image and a card detailing the key features of the coffee beans. The third section called "The Making" consists of the five steps of collecting the coffee beans, explaining the process behind those. This third section will appear on scroll. The fourth section called "FAQ" consists of five questions about important information for potential clients. These are aimed to answer the user stories and will be displayed in an accordion layout. The fifth and last part, also called "Contact", will include the "Let's do business" button linked to the form, the logo, address and a map showing the pinned coordinates from the first section. I decided not to include any social media links, as the company is new on the market and it's just getting started with their online presence. At the bottom of the page, there is a fixed navigation menu that is transformed into a hamburger menu on mobile. The website is designed to be kept simple and minimalistic, with an intuitive and informative approach, always keeping a visual balanced style for coherence. 
     - #### The **skeleton** plane 
@@ -35,6 +35,29 @@
         - A coffee themed slideshow with a darker overlay autoplays on the landing page. Some more images have been included in the features section to illustrate the types of coffee and many more icons throughout all sections, always coordinating with the chosen color scheme. Finally, a couple more videos aim to give more insight on coffee production and tasting. 
 
 -   ### [Wireframes](https://www.figma.com/file/GNF6bjKiLw33PaxfUfNLFd/MS2-Colombbeans?node-id=0%3A1). 
+
+Some small changes have been made to the original wireframes:
+
+- **Home**
+    - On this section, I have decided to take out the "Let's do business" button, as, after seeing the website as a whole, it no longer made sense to have it. There is already a dedicated section for the contact details, and, by removing it, the look of the section is much neater.
+    - The slideshow has three images instead of four, as that would take too long and users usually start scrolling down, so they wouldn't wait for it, and the zoom effect has been replaced with a darker overlay that allows for better readability of the banner text.
+- **The Coffee**
+    - Instead of doing the layout side by side, it looked better to have it stacked, so the architecture has been modified.
+    - The key features have been downsized from five to four.
+    - Instead of two images coming together with a parallax effect, as originally designed, it made more sense to present the different types of coffee beans with more illustrations. So for this, I chose to implement flipping cards that would be interactive and informational when clicking to turn them.
+
+- **The Process**
+    - The title of the section has been changed to *process* instead of *making*.
+    - Since all five steps were heavy on the content size, I decided to introduce two Youtube videos to make it more interactive and dynamic for the users. The content is well related and informational.
+
+- **Frequently Asked Questions**
+    - The title of the section looked better spelled out, just like the other sections, instead of the short *FAQ*.
+
+- **Contact**
+    - To the contact details part, a phone number and email address have been added as further details.
+    - The "Let's do business" button has also been removed from here and in its place, the form has been integrated with the same title.
+    - The map, originally on the right side on desktop view, is now stacked below the contact details and the contact form.
+    - As newly integrated part of this section, the form labels have been slightly edited: *Name*, *Email Address*, *Location*, *Tell us more about your needs*.
 
 ## Features
 #### Existing features
