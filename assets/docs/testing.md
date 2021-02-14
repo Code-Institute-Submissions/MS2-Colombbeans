@@ -29,7 +29,7 @@
     - In the third section, the entire coffee production process is described, so the user can decide if they are interested in a more traditionally produced coffee, depending on their needs/demand.
     - In the fourth section, the final statement encourages users to get in touch, so Colombbeans team can better understand their needs and cater to that, becoming an extension of their business.
 - #### As a user, I want to know what the minimum order is, so that I can later decide if I need to increase my supply and how that will affect the costs.
-    - In the fourth section, specifically in the last FAQ box, this is answered. Additionally, users are encouraged to get in touch with Colombbeas for discussing their unique needs on a case by case basis. 
+    - In the fourth section, specifically in the last FAQ box, this is answered. Additionally, users are encouraged to get in touch with Colombbeans for discussing their unique needs on a case by case basis. 
 - #### As a user, I want to know how the coffee is packaged and shipped, so that I am informed on the product standards.
     - In the third section, it is explained that the beans are sorted by quality and size to later be packed in bags and exported in the shortest of times, to ensure the fresh aroma.
     - In the fourth section, second FAQ, it is specified that regardless of location, delivery times only take up to three days maximum.
