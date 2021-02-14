@@ -26,7 +26,7 @@
 
 -   ### Design
     - #### Color Scheme 
-        - Throughout the website, there is a consistent use of warm earthy tones and the color palette can be found [here](assets/docs/color-palette.pdf).
+        - Throughout the website, there is a consistent use of warm earthy tones and the color palette can be found [here](assets/docs/colors-palette.pdf).
     - #### Typography
         - Barlow Google font with Sans Serif as the fallback font has been used. 
     - #### Imagery 
