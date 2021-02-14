@@ -4,8 +4,6 @@
 
 [View the live project here.](https://mihaelavacarus.github.io/MS2-Colombbeans/)
 
-**Please note: To open any links in this document in a new browser tab, please press `CTRL + Click`.**
-
 **Colombbeans** is the official website for Milestone Project 2. Designed to be responsive on all sort of devices, the website for the advertised product seeks to establish business partnerships with potential clients from all over the world by supplying them with high quality coffee beans from Colombia.
 
 ## User Experience (UX)
