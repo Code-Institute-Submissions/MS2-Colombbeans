@@ -71,6 +71,7 @@ Some small changes have been made to the original wireframes:
 
 #### Features left to implement on next updates:
 - Colombbeans farm to cup tasting feature: this would be free coffee samples that can be ordered when initiating business collaborations.
+- Create a client dedicated area where existing customers could log in and place their orders online. 
 - Blog section with weekly posts for educating people on coffee production, sustainability and roasting processes.
 
 ## Technologies used
