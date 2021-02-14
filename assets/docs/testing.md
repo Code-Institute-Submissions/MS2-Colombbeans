@@ -88,7 +88,7 @@
     - On mobile, the navigation menu opens with the animated circle effect as expected and stays fixed to the top.
 
 ### Known Bugs
-For my Iphone6 device, the mobile navigation menu is not opening as expected. Instead it opens with a delay and the menu flickers when trying to go through the different linked sections. I thought it could be related to this being an old model, but I could verify it works fine on an earlier device (Iphone5). I have connected the iPhone6 device to my laptop and debugged from the mobile view, but I could not resolve this.
+For my iPhone6 device, the mobile navigation menu is not opening as expected. Instead it opens with a delay and the menu flickers when trying to go through the different linked sections. I thought it could be related to this being an old model, but I could verify it works fine on an earlier device (Iphone5). I have connected the iPhone6 device to my laptop and debugged from the mobile view, but I could not resolve this.
 
 After some more research, it seems the iPhone6 had some touch screen issues related to the operating system. Currently, the device runs on iOS 12, specifically, 12.5.1, which does suggest it might be related to a bug that cannot be fixed because the software cannot be updated to the newer iOS versions.
 
