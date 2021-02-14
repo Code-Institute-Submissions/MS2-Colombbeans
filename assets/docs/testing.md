@@ -36,6 +36,8 @@
 - #### As a user I want to be able to make an inquiry based on my needs, so that I can maybe start a business relationship.
     - The final and fifth section (contact) has a dedicated part with the Colombbeans's contact details (email and phone number), as well as a contact form that allows users to formulate their needs and also complete a location field, so that the inquiry is answered in the most relevant way.
 
+- Check [here](assets/docs/user-stories.pdf) a supporting document with screenshots illustrating the user stories addressed above.
+
 ### Further Testing 
 
 - The Chrome extension [Responsive Viewer](https://chrome.google.com/webstore/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en) has been run and checked.
