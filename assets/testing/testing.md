@@ -76,6 +76,7 @@
     - Mail hyperlink opens as expected.
     - Form validation for incorrect input works as expected. 
     - Form validation for correct input works as expected. 
+    - Modal shows after submission of the form as expected, and the data is cleared from the fields.
     - "Send" button from the contact form prevents users from submitting if the fields are empty and only works if everything is filled in.
     - Email is sent correctly to my linked email address through EmailJS.
     - Google Maps display correctly with the pinned location. 
