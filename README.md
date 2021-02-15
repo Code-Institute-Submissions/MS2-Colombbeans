@@ -175,6 +175,7 @@ More information with screenshots can be found [here](https://docs.github.com/en
     - Florin Pop's [demo](https://codepen.io/FlorinPop17/pen/OJJKQeK) on form validation.
     - Dev Ed's [tutorial](https://www.youtube.com/watch?v=H4MkGzoACpQ) on the animated responsive navigation bar.
 - Code snippet for validating email with RegEx from [w3resource](https://www.w3resource.com/javascript/form/email-validation.php).
+- Solution for fixing undefined variables warning from JSHint validator [here](https://stackoverflow.com/questions/8852765/jshint-and-jquery-is-not-defined).
 
 ### Content
 All content was written by the developer.
