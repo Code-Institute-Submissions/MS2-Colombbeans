@@ -12,7 +12,7 @@
 
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): no errors found. The validator returns some "unknown vendor extension" warnings which, after some quick research, I learned could be safely ignored.
 
-- [JShint](https://jshint.com/): no errors found. The validator returns a couple of warnings which, after some quick research, I learned could be safely ignored.
+- [JSHint](https://jshint.com/): no errors found. The validator returns a couple of warnings which, after some quick research, I learned could be safely ignored.
 
 ### Testing User Stories from User Experience (UX) Section
 
