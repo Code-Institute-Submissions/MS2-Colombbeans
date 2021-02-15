@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+/*globals $:false */
 
 const form = document.getElementById("form");
 const name = document.getElementById("name");

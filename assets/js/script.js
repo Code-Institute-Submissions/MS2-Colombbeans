@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+/*globals $:false */
 
 $(document).ready(function () {
     //Function to animate the slideshow overlay from the home section
