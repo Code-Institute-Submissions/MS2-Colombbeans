@@ -123,7 +123,7 @@ Some small changes have been made to the original wireframes:
 6. [CSS-Tricks](https://css-tricks.com/)
 
 ## Testing
-Testing documentation can be found separately [here](assets/docs/testing.md).
+Testing documentation can be found separately [here](assets/testing/testing.md).
 
 ## Project barriers and solutions
 - For the flipping card images on the second section, it was problematic to fit the text on the back of the images. As images were resized for smaller screens, the back of the card became too small to fit the text. Originally, the back was yellow, so in order to solve this, I adjusted the padding a bit more and made the back transparent, so the overlap wouldn't be visible.
